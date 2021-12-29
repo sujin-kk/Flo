@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp">
+
+    <TextView
+        android:id="@+id/row_track_number_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:gravity="right"
+        android:layout_margin="5dp"
+        android:padding="7dp"
+        android:textSize="10dp"
+        android:text="00"/>
+
+    <LinearLayout
+        android:id="@+id/track_info_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/row_track_title_cv"
+                android:layout_width="35dp"
+                android:layout_height="15dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:visibility="gone"
+                android:backgroundTint="@color/mainColor">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="TITLE"
+                    android:textColor="@color/white"
+                    android:textSize="8sp" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/row_track_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="제목"
+                android:textColor="@color/darkGray"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/row_track_singer_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가수"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/row_track_play_ib"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        android:padding="5dp"
+        android:src="@drawable/btn_miniplayer_play" />
+
+    <ImageButton
+        android:id="@+id/row_track_more_ib"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        android:padding="5dp"
+        android:src="@drawable/btn_player_more" />
+</LinearLayout>

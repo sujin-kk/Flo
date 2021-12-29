@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeMainFragment">
+
+    <ImageView
+        android:id="@+id/home_background_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_default_4_x_1" />
+
+    <ImageView
+        android:id="@+id/home_btn_setting_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/btn_main_setting" />
+
+    <ImageView
+        android:id="@+id/home_btn_ticket_iv"
+        app:layout_constraintEnd_toStartOf="@+id/home_btn_setting_iv"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/btn_main_ticket" />
+
+    <ImageView
+        android:id="@+id/home_btn_nugu_iv"
+        app:layout_constraintEnd_toStartOf="@+id/home_btn_ticket_iv"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/btn_nugu" />
+
+    <TextView
+        android:id="@+id/home_title_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_btn_nugu_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="운동할 때 듣는 신나는 댄스"
+        android:textColor="#ffffff"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/home_btn_play_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_title_tv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/btn_panel_play_large" />
+
+    <TextView
+        android:id="@+id/home_album_date_tv"
+        app:layout_constraintBottom_toTopOf="@+id/home_album_exp_iv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="총 23곡 2021.08.06"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/home_album_exp_iv"
+        app:layout_constraintBottom_toTopOf="@+id/home_album_exp2_iv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/img_album_exp" />
+
+    <TextView
+        android:id="@+id/home_album_exp_text_01_tv"
+        app:layout_constraintBottom_toTopOf="@+id/home_album_exp_text_02_tv"
+        app:layout_constraintStart_toEndOf="@+id/home_album_exp_iv"
+        app:layout_constraintTop_toTopOf="@+id/home_album_exp_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="잠이 안온다"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/home_album_exp_text_02_tv"
+        app:layout_constraintBottom_toBottomOf="@+id/home_album_exp_iv"
+        app:layout_constraintStart_toEndOf="@+id/home_album_exp_iv"
+        app:layout_constraintTop_toBottomOf="@+id/home_album_exp_text_01_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="젠(Zen)"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/home_album_exp2_iv"
+        app:layout_constraintBottom_toBottomOf="@+id/home_background_iv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/img_album_exp" />
+
+    <TextView
+        android:id="@+id/home_album_exp2_text_01_tv"
+        app:layout_constraintBottom_toTopOf="@+id/home_album_exp2_text_02_tv"
+        app:layout_constraintStart_toEndOf="@+id/home_album_exp2_iv"
+        app:layout_constraintTop_toTopOf="@+id/home_album_exp2_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="잠이 안온다"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/home_album_exp2_text_02_tv"
+        app:layout_constraintBottom_toBottomOf="@+id/home_album_exp2_iv"
+        app:layout_constraintStart_toEndOf="@+id/home_album_exp2_iv"
+        app:layout_constraintTop_toBottomOf="@+id/home_album_exp2_text_01_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="젠(Zen)"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
